@@ -1,0 +1,271 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futuristic Portfolio</title>
+    <meta name="description" content="A stunning futuristic portfolio" />
+    <meta name="author" content="Lovable" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'home/css/design.css' %}" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Dynamic Island Navigation -->
+      <nav class="dynamic-island" aria-label="Main navigation">
+        <div class="nav-content">
+          <a href="#hero" class="nav-item" aria-label="Home">
+            <i class="fas fa-compass"></i>
+          </a>
+          <a href="#about" class="nav-item" aria-label="About">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="#skills" class="nav-item" aria-label="Skills">
+            <i class="fas fa-code"></i>
+          </a>
+          <a href="#projects" class="nav-item" aria-label="Projects">
+            <i class="fas fa-project-diagram"></i>
+          </a>
+          <a href="#contact" class="nav-item" aria-label="Contact">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <div class="nav-indicator"></div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="hero" class=" hero-section">
+        <div class="hero-content">
+          <h1 class="gradient-text animate-fade-in">
+            Hello, <br />
+            I'm <span class="auto-type"></span>
+          </h1>
+          <p class="subtitle animate-fade-in-delay">
+            Full-Stack Developer & UI Designer
+          </p>
+          <div class="floating-elements">
+            <div class="floating-circle"></div>
+            <div class="floating-square"></div>
+            <div class="floating-triangle"></div>
+            <div class="float-1"></div>
+            <div class="float-2"></div>
+            <div class="float-3"></div>
+            <div class="float-4"></div>
+            <div class="float-5"></div>
+            <div class="float-6"></div>
+            <div class="float-7"></div>
+            <div class="float-8"></div>
+            <div class="float-9"></div>
+            <div class="float-10"></div>
+            <div class="float-11"></div>
+            <div class="float-12"></div>
+            <div class="float-13"></div>
+            <div class="float-14"></div>
+            <div class="float-15"></div>
+            <div class="float-16"></div>
+            <div class="float-17"></div>
+            <div class="float-18"></div>
+            <div class="float-19"></div>
+            <div class="float-20"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="glass-card about-card animate-fade-in">
+          <h2 class="gradient-text">
+            Step right in and make yourself at home!
+          </h2>
+          <p>
+            I'm a passionate developer who loves creating beautiful and
+            functional web experiences. With a focus on modern design and clean
+            code, I bring ideas to life through technology. My journey began
+            with a curiosity for how things work behind the screen, and it has
+            grown into a full-fledged passion for crafting seamless digital
+            solutions. Whether it's designing user-friendly interfaces, writing
+            efficient code, or exploring the latest tech trends, I’m always
+            driven by a desire to learn, innovate, and make a difference. Let's
+            build something amazing together!
+          </p>
+        </div>
+      </section>
+
+      <h1 id="projects"class="gradient-text">My Projects</h1>
+
+      <div id="app" class="container">
+        <div class="card-wrap">
+          <div class="card">
+            <div
+              class="card-bg"
+              style="background-image: url('static/home/images/Kiosk.png')"
+            ></div>
+            <div class="card-info">
+              <h1>Kiosk</h1>
+              <p>
+                Ceu Kiosk is a self-service platform designed to simplify
+                transactions and enhance user convenience for students and
+                staff.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <div class="card">
+            <div
+              class="card-bg"
+              style="background-image: url('static/home/images/Kitter.png')"
+            ></div>
+            <div class="card-info">
+              <h1>Kitter</h1>
+              <p>
+                Pet Adoption is made easier with Kitter, a platform connecting
+                animal lovers with pets in need of a forever home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <div class="card">
+            <div
+              class="card-bg"
+              style="background-image: url('static/home/images/Brew.png')"
+            ></div>
+            <div class="card-info">
+              <h1>Everbrew</h1>
+              <p>
+                Coffee shop enthusiasts will love Everbrew, a brand showcasing
+                premium beverages and a cozy café atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrap">
+          <div class="card">
+            <div
+              class="card-bg"
+              style="background-image: url('static/home/images/Roomie.png')"
+            ></div>
+            <div class="card-info">
+              <h1>Roomie</h1>
+              <p>
+                Furniture shop Roomie offers stylish, affordable solutions to
+                create a comfortable and modern living space.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button" onclick="location.href='gallery'">View Projects</button>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="gradient-text">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span>HTML/CSS</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>Django</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>Java</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="50"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>MySQL</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>MongoDB</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>Figma</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>UI Design</span>
+            <div class="skill-bar-container">
+              <div class="skill-bar" data-percent="80"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="glass-card contact-card">
+          <h2 class="gradient-text">Contact Me</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                required
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>&copy; 2024 Hannah Gundaya. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'home/js/main.js' %}"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Hannah Gundaya", "a Website Developer", "a UI Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

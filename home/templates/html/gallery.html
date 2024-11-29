@@ -1,0 +1,162 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'home/css/gallery.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="gallery-header">
+        <h1 class="gallery-title">Project Gallery</h1>
+        <p>Explore my latest works and creative endeavors</p>
+      </header>
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/Kiosk.png' %}"
+            alt="Kiosk Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>CEU Kiosk</h3>
+            <p>
+              A self-service platform designed to simplify transactions and
+              enhance user convenience for students and staff.
+            </p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/Kitter.png' %}"
+            alt="Kitter Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>Kitter Pet Adoption</h3>
+            <p>
+              Pet Adoption platform connecting animal lovers with pets in need
+              of a forever home.
+            </p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/Brew.png' %}"
+            alt="Everbrew Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>Everbrew Coffee Shop</h3>
+            <p>
+              Coffee shop brand showcasing premium beverages and a cozy café
+              atmosphere.
+            </p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/Roomie.png' %}"
+            alt="Roomie Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>Roomievation</h3>
+            <p>
+              Furniture shop offering stylish, affordable solutions to create a
+              comfortable and modern living space.
+            </p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/Concert.png' %}"
+            alt="Roomie Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>Concert Co.</h3>
+            <p>
+              Concert Co. a platform for music lovers to discover, book, and
+              experience live concerts.
+            </p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <img
+            src="{% static 'home/images/portfolio.png' %}"
+            alt="Everbrew Project"
+            class="gallery-image"
+          />
+          <div class="gallery-content">
+            <h3>My First Portfolio</h3>
+            <p>Doing my portfolio for the first time using Django.</p>
+            <div class="gallery-links">
+              <a href="" class="gallery-link"
+                ><i class="fas fa-link"></i> Live Demo</a
+              >
+              <a href="" class="gallery-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <a href="{% url 'home' %}" class="back-button" aria-label="Back to Home">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  
+  </body>
+</html>
